@@ -1,0 +1,35 @@
+
+@APIURL=http://localhost:3000/api
+
+// GET LIST OF QUESTIONS
+POST  {{APIURL}}/1/startgame
+
+###
+
+
+POST  {{APIURL}}/games/1/checkproperties
+Content-Type: application/json
+
+{
+    "property" : "nature",
+    "value" : "Hostile"
+}
+
+###
+
+PUT  {{APIURL}}/games/1/checkguess
+Content-Type: application/json
+
+{
+    "guess" : "Creeper"
+}
+
+
+###
+
+GET  {{APIURL}}/properties
+
+###
+
+DELETE  {{APIURL}}/logout
+

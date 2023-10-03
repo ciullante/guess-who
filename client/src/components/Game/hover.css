@@ -1,0 +1,11 @@
+
+/* Opacity #1 */
+.hover11 img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover11  img:hover {
+	opacity: .6;
+}
+
